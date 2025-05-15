@@ -24,6 +24,7 @@ const TodoList: React.FC = () => {
       const response = await fetch(getApiUrl('/api/todos'));
       const data = await response.json();
       console.log(data);
+      console.log("wee");
       setTodos(data);
     } catch (error) {
       console.error('Failed to fetch todos:', error);
